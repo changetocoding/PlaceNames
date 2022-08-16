@@ -1,6 +1,9 @@
-﻿namespace PlaceNamesEx.Fileservice
+// You are not allowed to change this class
+namespace PlaceNamesEx.Fileservice
 {
     // https://raw.githubusercontent.com/changetocoding/CSharpTraining/main/Lesson-10-multi/PlaceNamesUkWithC.txt
+    
+    // You are not allowed to change this class
     public class PlaceNamesService
     {
         public IEnumerable<PlaceNames> GetPlaceNames(string fileLoc)
@@ -15,7 +18,7 @@
         }
     }
 
-    // Cant use this class. Create you own
+    // You are not allowed to change this class
     public class PlaceNames
     {
         public PlaceNames(int id, string name, string county, string country)
