@@ -1,0 +1,108 @@
+<script>
+import TodoApp from "./components/TodoApp.vue";
+
+export default {
+  name: 'App',
+  components: {
+    TodoApp,
+  },
+}
+</script>
+
+<template>
+  <div id="app">
+
+    <div class="wrapper">
+      <TodoApp />
+    </div>
+  </div>
+</template>
+
+<style>
+body {
+  background: #daecfb;
+}
+
+button {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 45rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.create-task {
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #2199e8;
+  font-weight: 700;
+}
+
+.filter-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 10px;
+}
+.task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  width: 50%;
+  padding: 0.75em;
+  overflow: auto;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #bcdefb;
+}
+
+.task-p {
+  display: flex;
+  width: 80%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.delete-button {
+  align-self: flex-end;
+}
+
+</style>
